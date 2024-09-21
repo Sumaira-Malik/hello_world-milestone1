@@ -1,35 +1,92 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-
-
-div{
-  width: 500px;
-  height: 300px;
-  margin: auto;
-  margin-top: 200px;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid red;
-  text-align: center;
-  background: linear-gradient(to right, rgb(222, 98, 98), rgb(87, 87, 231)); 
-  border-radius: 50px;
-}
-div:hover{
-  color: white;
-  transform: scale(1.1);
-  border: 5px solid black;  
-  transition: 2s;
-}
-h1{
-  padding-top: 80px;
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-h3{
-  font-size: 2rem;
-  padding-top: 15px;
-  font-weight: 500;
-}
-
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  
+  
+  
+  
+  div {
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230411/pngtree-floral-light-purple-white-background-image_2362100.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Responsive H1 Styling */
+  h1 {
+    font-size:3.8rem;
+    color: #3d043a;
+    position: relative;
+    font-weight: 800;
+    padding-top: 250px;
+    animation: mymove 3s infinite;
+    animation-delay: 2s;
+  }
+  
+  @keyframes mymove {
+    from { left: 0px; }
+    to { left: 700px; }
+  }
+  
+  /* Responsive H3 Styling */
+  h3 {
+    font-size: 3.5rem;
+    color: #952085;
+    font-weight: 800;
+    padding: 0px 0px 0px 300px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    animation: mymove2 3s infinite;
+    animation-delay: 2s;
+    position: absolute;
+  }
+  
+  @keyframes mymove2 {
+    from { right: 0px; }
+    to { right: 300px; }
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media only screen and (max-width: 600px){
+    h1 {
+      font-size: 3rem;
+      padding-top: 250px;
+      animation: mymove 3s infinite;
+      animation-delay: 2s;
+    }
+    @keyframes mymove {
+      from { left: 0px; }
+      to { left: 90px; }
+    }
+    
+  
+    h3 {
+      font-size:0.8rem;
+      font-weight: 800;
+      padding-left: 150px;
+      color: #952085;
+      animation: mymove2 3s infinite;
+      animation-delay: 2s;
+    }
+    @keyframes mymove2 {
+      from { right: 0px; }
+      to { right: 80px; }
+    }
+    
+  }
+    h1{
+    padding-top: 80px;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+    h3{
+    font-size: 2rem;
+    padding-top: 15px;
+    font-weight: 500;
+  }
+   
