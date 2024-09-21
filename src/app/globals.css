@@ -18,12 +18,12 @@
   
   /* Responsive H1 Styling */
   h1 {
-    font-size:5.5rem;
+    font-size:6rem;
     color: #3d043a;
     position: relative;
     font-weight: 800;
-    padding-top: 350px;
-    animation: mymove 5s infinite;
+    padding-top: 300px;
+    animation: mymove 6s infinite;
     animation-delay: 2s;
   }
   
@@ -41,7 +41,7 @@
     margin: auto;
     justify-content: center;
     text-align: center;
-    animation: mymove2 3s infinite;
+    animation: mymove2 6s infinite;
     animation-delay: 2s;
     position: absolute;
   }
@@ -55,7 +55,7 @@
   @media only screen and (max-width: 600px){
     h1 {
       font-size: 3rem;
-      padding-top: 350px;
+      padding-top: 300px;
       animation: mymove 6s infinite;
       animation-delay: 2s;
     }
@@ -68,14 +68,14 @@
     h3 {
       font-size:1rem;
       font-weight: 800;
-      padding-left: 150px;
+      padding-left: 100px;
       color: #952085;
-      animation: mymove2 5s infinite;
+      animation: mymove2 6s infinite;
       animation-delay: 2s;
     }
     @keyframes mymove2 {
       from { right: 0px; }
-      to { right: 80px; }
+      to { right: 100px; }
     }
     
   }
